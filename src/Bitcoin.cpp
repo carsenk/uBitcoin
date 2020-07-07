@@ -17,10 +17,10 @@ using std::string;
 #endif
 
 const Network Mainnet = {
-    0x00, // p2pkh
-    0x05, // p2sh
-    "bc", // bech32
-    0x80, // wif
+    0x1E, // p2pkh
+    0x5A, // p2sh
+    "", // bech32 not supported
+    0x9E, // wif
     { 0x04, 0x88, 0xad, 0xe4 }, // xprv
     { 0x04, 0x9d, 0x78, 0x78 }, // yprv
     { 0x04, 0xb2, 0x43, 0x0c }, // zprv
@@ -31,7 +31,7 @@ const Network Mainnet = {
     { 0x04, 0xb2, 0x47, 0x46 }, // zpub
     { 0x02, 0x95, 0xb4, 0x3f }, // Ypub
     { 0x02, 0xaa, 0x7e, 0xd3 }, // Zpub
-    0 // bip32 coin type
+    116 // bip32 coin type
 };
 
 const Network Testnet = {
